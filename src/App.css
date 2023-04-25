@@ -28,7 +28,7 @@
   --smaller-font-size: 0.813rem;
   --tiny-font-size: 0.625rem;
 
-  /* ------------------------------- FONT wEIGHT ------------------------------ */
+  /* ------------------------------- FONT WEIGHT ------------------------------ */
   --font-normal: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -190,8 +190,16 @@ img {
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
   .section {
     padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
   }
 }
 
@@ -200,10 +208,12 @@ img {
 
 /* For small devices */
 @media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+  
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-
-
 }
